@@ -1,0 +1,51 @@
+@import url(./reset.css);
+
+/* theme 
+
+#5386a5
+#cccccc
+#353949
+#6c5ce7 */
+
+:root{
+    --bgcolor: #03193d;
+    --bgcolor-figcaption:#cccccc;
+    --figure-bgcolor:#353949;
+    --bgcolor-bloquote:#6c5ce7;
+    --color-text:#fff;
+}
+header{
+    line-height: 8rem;
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--color-text);
+}
+figure{
+    max-width: 80rem;
+    margin: 5rem auto;
+    border:solid .1rem transparent;
+}
+figure img{
+    display: inline-block;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    clip-path: circle(35%);
+    filter: grayscale(50%);
+}
+figure figcaption h2{
+    background: var(--bgcolor-figcaption);
+    color: #222;
+    width: max-content;  /*largeur devient celle du contenu adapter le conteneur au contenu*/
+    line-height: 5rem;
+    padding: 0 1rem;
+    border-radius: 1rem 1rem 0 0;
+
+
+}
+figcaption p{
+    color: var(--color-text);
+    padding: .5rem;
+    background: var(--figure-bgcolor);
+}
