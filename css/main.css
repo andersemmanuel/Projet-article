@@ -1,3 +1,4 @@
+
 @import url(./reset.css);
 
 /* 
@@ -23,6 +24,7 @@ header h1{
     text-align: center;
     font-size: 4.5rem;
     color: var(--color-text);
+
 }
 figure{
     max-width: 80rem;
@@ -71,6 +73,51 @@ blockquote{
     }
     margin-bottom: 2rem;
 }
+.table-primary{
+    max-width: 80em;
+    margin: 0 auto;
+
+    
+    table{
+        width: 100%;
+        color: #fff;
+        border-collapse: collapse;
+        border: solid .1rem #fff;
+        thead th, tbody td, tfoot th{
+            border-collapse: collapse;
+            border: solid .1rem #fff;
+            padding: .5em;
+        }
+        thead th, tfoot th{
+            background-color: #ccc;
+            color: #222;
+            font-weight: normal;
+        }
+        thead th:first-child{
+            width: 20%;
+        }
+        thead th:last-child{
+            width: 20%;
+           
+        }
+        tbody td a{
+            color: #fff;
+        }
+        tbody td a:hover{
+            text-decoration: underline;
+        }
+        tbody td:last-child{
+            text-align: center;
+        }
+        tbody td{
+            vertical-align: top;
+        }
+
+}
+        
+    
+}
+
 footer *{
     text-align: center;
     color: var(--color-text);
